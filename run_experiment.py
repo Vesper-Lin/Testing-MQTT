@@ -1,0 +1,1 @@
+from subprocess import PopenPopen(['python3', 'publisher.py'])Popen(['python3', 'analyser.py'])
