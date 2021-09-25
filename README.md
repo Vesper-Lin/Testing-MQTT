@@ -4,12 +4,12 @@ ANU COMP3310 : Computer Networks - Assignment 3
 
 ## Getting Started
 
-If you have a specific MQTT broker to test, please relace the following default variables in both **analyser.py** and **publisher.py**.
+If you have a specific MQTT broker to test, please replace the following default variables in both **analyser.py** and **publisher.py**.
 
     broker = 'qb5ddeee.us-east-1.emqx.cloud'  
     port   =  15490
 
-**run_experiment.py** is designed for collecting all the statistics in one run, *36 miniutes* in total. Simply run the experiment script with command `python3 run_expermiment.py` in the terminal, eventually all the data will be collected into **stats.csv**.
+**run_experiment.py** is designed for collecting all the statistics in one run, *36 minutes* in total. Simply run the experiment script with command `python3 run_expermiment.py` in the terminal, eventually all the data will be collected into **stats.csv**.
 
 For your convenience, you can also modify the following code in **analyser.py** to reduce data collecting duration for a quick review.
 
@@ -37,7 +37,7 @@ To stop the program, enter **Control (Ctrl) + C** in the terminal window.
 
 ### analyser
 
-- If it is started, it publishes to topics 'request/qos' and 'request/delay' with qos and delay information in the payload, so that publisher will be modifed.
+- If it is started, it publishes to topics 'request/qos' and 'request/delay' with qos and delay information in the payload, so that publisher will be modified.
 - It subscribes to all the combinations of qoses and delays - 18 topics in total, and collects data including Packet IDs and timestamps meanwhile.
 - It calculates metrics for data analysis and generates a csv file containing the statistics.
 
